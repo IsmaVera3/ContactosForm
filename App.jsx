@@ -25,12 +25,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Contact List</h1>
+      <h1>Lista de Contactos</h1>
       <ContactForm addContact={addContact} />
       <ul>
         {contacts.map((contact) => (
           <li key={contact.id}>
-            {contact.firstName} {contact.lastName} - {contact.phone}
+            {contact.nombre} {contact.apellido} - {contact.telefono}
             <button onClick={() => deleteContact(contact.id)}>Eliminar</button>
           </li>
         ))}
