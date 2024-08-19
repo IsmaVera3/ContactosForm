@@ -3,9 +3,9 @@ import ContactCard from './ContactCard';
 
 function ContactForm({ addContact }) {
   const [contact, setContact] = useState({
-    firstName: '',
-    lastName: '',
-    phone: ''
+    nombre: '',
+    apellido: '',
+    telefono: ''
   });
 
   const handleChange = (e) => {
@@ -19,7 +19,7 @@ function ContactForm({ addContact }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     addContact(contact);
-    setContact({ firstName: '', lastName: '', phone: '' });
+    setContact({ nombre: '', apellido: '', telefono: '' });
   };
 
   return (

@@ -5,23 +5,23 @@ function ContactCard({ contact, onChange }) {
     <div className="contact-card">
       <input
         type="text"
-        name="firstName"
+        name="nombre"
         placeholder="Nombre"
-        value={contact.firstName}
+        value={contact.nombre}
         onChange={onChange}
       />
       <input
         type="text"
-        name="lastName"
+        name="apellido"
         placeholder="Apellido"
-        value={contact.lastName}
+        value={contact.apellido}
         onChange={onChange}
       />
       <input
         type="text"
-        name="phone"
+        name="telefono"
         placeholder="Numero"
-        value={contact.phone}
+        value={contact.telefono}
         onChange={onChange}
       />
     </div>
